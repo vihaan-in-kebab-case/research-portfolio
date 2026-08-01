@@ -20,6 +20,8 @@ export default function ContactPage() {
           <a
             key={l.label}
             href={l.href}
+            target={l.target}
+            rel={l.rel}
             className="border border-border bg-card px-4 py-2.5 font-mono text-[13px] transition hover:border-cyan"
           >
             {l.label}
