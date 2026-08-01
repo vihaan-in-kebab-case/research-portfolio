@@ -1,6 +1,8 @@
 import TerminalCard from "@/components/TerminalCard";
 import { getAllEntries } from "@/lib/content";
 import { SITE_CONFIG } from "@/lib/site-config";
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export default function HomePage() {
   const research = getAllEntries("research");
@@ -67,6 +69,8 @@ export default function HomePage() {
           </div>
         </div>
       </div>
+      <Analytics />
+      <SpeedInsights />
     </section>
   );
 }
