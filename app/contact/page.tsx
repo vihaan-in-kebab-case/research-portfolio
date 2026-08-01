@@ -2,11 +2,11 @@ import { SITE_CONFIG } from "@/lib/site-config";
 import ContactForm from "./ContactForm";
 
 const LINKS = [
-  { label: "Email", href: `mailto:${SITE_CONFIG.email}` },
-  { label: "GitHub", href: SITE_CONFIG.github },
-  { label: "LinkedIn", href: SITE_CONFIG.linkedin },
-  { label: "Google Scholar", href: SITE_CONFIG.googleScholar },
-  { label: "ORCID", href: SITE_CONFIG.orcid },
+  { label: "Email", href: `mailto:${SITE_CONFIG.email}`, target: "_blank", rel: "noopener noreferrer" },
+  { label: "GitHub", href: SITE_CONFIG.github, target: "_blank", rel: "noopener noreferrer" },
+  { label: "LinkedIn", href: SITE_CONFIG.linkedin, target: "_blank", rel: "noopener noreferrer" },
+  { label: "Google Scholar", href: SITE_CONFIG.googleScholar, target: "_blank", rel: "noopener noreferrer" },
+  { label: "ORCID", href: SITE_CONFIG.orcid, target: "_blank", rel: "noopener noreferrer" },
 ];
 
 export default function ContactPage() {

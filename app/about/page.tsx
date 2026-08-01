@@ -44,12 +44,16 @@ export default function AboutPage() {
             <a
               href={SITE_CONFIG.githubCvPath}
               className="border border-border bg-card px-3.5 py-2 font-mono text-[12px] transition hover:border-cyan"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               View on GitHub
             </a>
             <a
               href="/cv.pdf"
               className="border border-cyan bg-cyan px-3.5 py-2 font-mono text-[12px] font-semibold text-bg transition hover:opacity-90"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Download PDF
             </a>

@@ -32,7 +32,7 @@ export default function HomePage() {
           <a href="/about#cv" className="border border-border bg-card px-4 py-2.5 font-mono text-[13px] transition hover:border-cyan">
             CV
           </a>
-          <a href={SITE_CONFIG.github} className="border border-border bg-card px-4 py-2.5 font-mono text-[13px] transition hover:border-cyan">
+          <a href={SITE_CONFIG.github} className="border border-border bg-card px-4 py-2.5 font-mono text-[13px] transition hover:border-cyan" target="_blank" rel="noopener noreferrer">
             GitHub
           </a>
           <a href="/contact" className="border border-border bg-card px-4 py-2.5 font-mono text-[13px] transition hover:border-cyan">

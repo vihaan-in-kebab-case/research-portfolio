@@ -25,6 +25,8 @@ export default function ResearchEntryPage({ params }: { params: { slug: string }
         {fm.repo && (
           <a
             href={fm.repo}
+            target="_blank"
+            rel="noopener noreferrer"
             className="mb-8 inline-block border border-cyan px-3 py-1.5 font-mono text-[12px] text-cyan transition hover:bg-cyan hover:text-bg"
           >
             View repository →
