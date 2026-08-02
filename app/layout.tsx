@@ -22,8 +22,15 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Research Notebook",
+  title: "Vihaan's Research Portfolio",
   description: "An open research notebook that documents how my ideas evolve, not just what I've built.",
+  openGraph: {
+    title: "Vihaan's Research Portfolio",
+    description: "An open research notebook that documents how my ideas evolve, not just what I've built.",
+    url: "https://research-portfolio-phi.vercel.app",
+    siteName: "Vihaan's Research Portfolio",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
