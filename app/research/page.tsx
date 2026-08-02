@@ -8,19 +8,18 @@ export default function ResearchPage() {
   return (
     <section className="py-16">
       <div className="mb-8 font-mono text-xs uppercase tracking-widest text-text-faint">
-        research
+        my_work.md
       </div>
       <h1 className="mb-2 font-pixel text-2xl">Research</h1>
       <p className="mb-10 max-w-xl text-text-dim">
         Each entry below is a live, evolving research thread — motivation,
-        method, results, where it fell apart, and the artifact it produced,
-        if any.
+        method, results, and sometimes where it fell apart.
       </p>
 
       {entries.length === 0 ? (
         <EmptyState
           collection="research"
-          hint="A research entry needs: title, motivation, research question, background, literature, methodology, experiments, results, failure analysis, future work, paper/poster. Add a repo link if the thread produced a working artifact."
+          hint="A research entry needs: title, motivation, research question, background, literature, methodology, experiments, results, failure analysis, future work, paper/poster."
         />
       ) : (
         <div className="space-y-4">
@@ -34,11 +33,6 @@ export default function ResearchPage() {
                 <span>{e.frontmatter.status ?? "status unset"}</span>
                 <span>·</span>
                 <span>{e.frontmatter.date ?? "date unset"}</span>
-                {e.frontmatter.repo && (
-                  <span className="border border-cyan px-1.5 py-0.5 text-[9px] uppercase tracking-widest text-cyan">
-                    has repo
-                  </span>
-                )}
               </div>
               <div className="font-pixel text-base">
                 {e.frontmatter.title ?? e.slug}

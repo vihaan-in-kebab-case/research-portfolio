@@ -12,7 +12,7 @@ const LINKS = [
 export default function ContactPage() {
   return (
     <section className="py-16">
-      <div className="mb-8 font-mono text-xs uppercase tracking-widest text-text-faint">contact</div>
+      <div className="mb-8 font-mono text-xs uppercase tracking-widest text-text-faint">all_my_links.exe</div>
       <h1 className="mb-10 font-pixel text-2xl">Get in touch</h1>
 
       <div className="mb-12 flex flex-wrap gap-2.5">

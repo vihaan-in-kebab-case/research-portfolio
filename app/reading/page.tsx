@@ -12,13 +12,11 @@ export default function ReadingPage() {
   return (
     <section className="py-16">
       <div className="mb-8 font-mono text-xs uppercase tracking-widest text-text-faint">
-        reading &amp; notes
+        paper_analysis.md
       </div>
-      <h1 className="mb-2 font-pixel text-2xl">Reading &amp; Notes</h1>
+      <h1 className="mb-2 font-pixel text-2xl">Reading List </h1>
       <p className="mb-10 max-w-xl text-text-dim">
-        Everything I read, logged. Some entries are a one-line takeaway;
-        others get the full critical-analysis treatment — strengths,
-        weaknesses, assumptions, and what I still don&apos;t understand.
+        Deep dives (and the occasional quick note) on papers I read. Strengths, weaknesses, assumptions, connections, what I still don't understand, and ideas inspired by the work.
       </p>
 
       {entries.length === 0 ? (

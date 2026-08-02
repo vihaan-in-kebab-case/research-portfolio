@@ -30,14 +30,14 @@ export default function HomePage() {
           <a href="/research" className="border border-cyan bg-cyan px-4 py-2.5 font-mono text-[13px] font-semibold text-bg transition hover:opacity-90">
             Research →
           </a>
-          <a href="/about#cv" className="border border-border bg-card px-4 py-2.5 font-mono text-[13px] transition hover:border-cyan">
+          <a href={SITE_CONFIG.cvPDF} className="border border-border bg-card px-4 py-2.5 font-mono text-[13px] transition hover:border-cyan" target="_blank" rel="noopener noreferrer">
             CV
           </a>
           <a href={SITE_CONFIG.github} className="border border-border bg-card px-4 py-2.5 font-mono text-[13px] transition hover:border-cyan" target="_blank" rel="noopener noreferrer">
             GitHub
           </a>
           <a href="/contact" className="border border-border bg-card px-4 py-2.5 font-mono text-[13px] transition hover:border-cyan">
-            Email
+            Contact me
           </a>
         </div>
       </div>

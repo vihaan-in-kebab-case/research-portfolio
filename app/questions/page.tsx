@@ -7,9 +7,9 @@ export default function QuestionsPage() {
   return (
     <section className="py-16">
       <div className="mb-8 font-mono text-xs uppercase tracking-widest text-text-faint">
-        research questions
+        what_why_how_when_where_who_which.md
       </div>
-      <h1 className="mb-2 font-pixel text-2xl">Questions, not answers</h1>
+      <h1 className="mb-2 font-pixel text-2xl">Questions that bug (in a good way) me</h1>
       <p className="mb-10 max-w-xl text-text-dim">
         Open threads I&apos;m still working through. Status changes as my
         understanding does.
