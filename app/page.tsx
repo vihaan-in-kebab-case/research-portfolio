@@ -22,7 +22,7 @@ export default function HomePage() {
           computer vision · natural language processing · 3d-reconstruction
         </p>
         <p className="mb-6 max-w-xl text-text-dim">
-          I'm an undergraduate computer science student from <a href="https://www.manipal.edu/mit.html" target="_blank" rel="noopener noreferrer" className="underline decoration-cyan font-mono text-[13px] font-semibold">MIT, Manipal</a> with a growing interest in machine learning research, particularly in computer vision, natural language processing, multimodal learning, and representation learning. I'm fascinated by understanding not just <b>what</b> works, but <b>why</b> it works.<br></br><br></br>
+          I'm an undergraduate computer science student from <a href="https://www.manipal.edu/mit.html" target="_blank" rel="noopener noreferrer" className="underline decoration-cyan font-mono text-[13px] font-bold">Manipal Institute of Technology</a> with a growing interest in machine learning research, particularly in computer vision, natural language processing, multimodal learning, and representation learning. I'm fascinated by understanding not just <b>what</b> works, but <b>why</b> it works.<br></br><br></br>
           My work centers around reading and reproducing research, building systems from first principles, and documenting both successes and failures through this open research notebook. I enjoy dissecting papers, questioning assumptions, and exploring the mathematical foundations behind modern AI.<br></br><br></br>
           This website is a living record of that journey, a place where I document projects, experiments, research notes, and the questions that continue to shape my thinking.
         </p>
