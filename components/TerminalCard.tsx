@@ -5,7 +5,7 @@ interface TerminalCardProps {
 
 export default function TerminalCard({ title, rows }: TerminalCardProps) {
   return (
-    <div className="pixel-corners my-2 border border-border bg-card">
+    <div className="my-2 rounded-md border border-border bg-card overflow-hidden">
       <div className="flex items-center gap-1.5 border-b border-border-soft bg-bg-raised px-3 py-2">
         <span className="h-1.5 w-1.5 bg-rust" />
         <span className="h-1.5 w-1.5 bg-border" />

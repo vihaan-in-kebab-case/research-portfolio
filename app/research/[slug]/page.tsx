@@ -14,7 +14,7 @@ export default function ResearchEntryPage({ params }: { params: { slug: string }
 
   return (
     <article className="py-16">
-      <div className="pixel-corners border border-border bg-card p-10">
+      <div className="rounded-md border border-border bg-card p-10">
         <div className="mb-5 flex flex-wrap gap-4 font-mono text-[11px] text-text-faint">
           <span>STATUS: {fm.status ?? "—"}</span>
           <span>STARTED: {fm.date ?? "—"}</span>

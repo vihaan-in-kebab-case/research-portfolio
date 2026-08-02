@@ -42,7 +42,7 @@ export default function AboutPage() {
           <h2 className="font-pixel text-lg">CV</h2>
           <div className="flex gap-2.5">
             <a
-              href={SITE_CONFIG.githubCvPath}
+              href={SITE_CONFIG.githubCVPath}
               className="border border-border bg-card px-3.5 py-2 font-mono text-[12px] transition hover:border-cyan"
               target="_blank"
               rel="noopener noreferrer"

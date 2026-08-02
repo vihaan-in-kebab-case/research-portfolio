@@ -47,3 +47,30 @@ export function getAllEntries(collection: string): ContentEntry[] {
       return db - da;
     });
 }
+
+export function isDeepDive(entry: ContentEntry): boolean {
+  const fm = entry.frontmatter;
+
+  if (typeof fm.deep_dive === "boolean") return fm.deep_dive;
+
+  const wordCount = entry.content.trim().length
+    ? entry.content.trim().split(/\s+/).length
+    : 0;
+  const hours = parseTimeInvested(fm.time_invested);
+  const hasCitation = Boolean(fm.authors || fm.venue);
+
+  const substantialBody = wordCount >= 150;
+  const substantialTime = hours !== null && hours >= 1;
+  const citedWithSomeWriting = hasCitation && wordCount >= 60;
+
+  return substantialBody || substantialTime || citedWithSomeWriting;
+}
+
+function parseTimeInvested(value?: string): number | null {
+  if (!value || typeof value !== "string") return null;
+  const hourMatch = value.match(/([\d.]+)\s*h/i);
+  if (hourMatch) return parseFloat(hourMatch[1]);
+  const minuteMatch = value.match(/([\d.]+)\s*m/i);
+  if (minuteMatch) return parseFloat(minuteMatch[1]) / 60;
+  return null;
+}

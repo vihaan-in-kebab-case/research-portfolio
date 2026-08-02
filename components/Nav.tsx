@@ -7,7 +7,7 @@ import { useState } from "react";
 const LINKS = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
-  { href: "/research", label: "Research" },
+  { href: "/research", label: "Research & Projects" },
   { href: "/notebook", label: "Notebook" },
   { href: "/reading", label: "Reading & Notes" },
   { href: "/questions", label: "Questions" },
@@ -23,7 +23,7 @@ export default function Nav() {
       <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
         <Link href="/" className="flex items-center gap-2.5 font-pixel text-sm tracking-wide">
           <span className="h-2 w-2 animate-pulse bg-cyan" />
-          research notebook
+          vihaan's research notebook
         </Link>
 
         <button
@@ -34,9 +34,8 @@ export default function Nav() {
         </button>
 
         <ul
-          className={`${
-            open ? "flex" : "hidden"
-          } absolute left-0 right-0 top-full flex-col border-b border-border-soft bg-bg-raised p-2 md:static md:flex md:flex-row md:border-none md:bg-transparent md:p-0`}
+          className={`${open ? "flex" : "hidden"
+            } absolute left-0 right-0 top-full flex-col border-b border-border-soft bg-bg-raised p-2 md:static md:flex md:flex-row md:border-none md:bg-transparent md:p-0`}
         >
           {LINKS.map((link) => {
             const active = pathname === link.href;
@@ -45,11 +44,10 @@ export default function Nav() {
                 <Link
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className={`block rounded-sm px-3 py-2 font-pixel text-[11px] tracking-wide transition-colors ${
-                    active
-                      ? "bg-cyan text-bg"
-                      : "text-text-dim hover:bg-card-2 hover:text-text"
-                  }`}
+                  className={`block rounded-sm px-3 py-2 font-pixel text-[11px] tracking-wide transition-colors ${active
+                    ? "bg-cyan text-bg"
+                    : "text-text-dim hover:bg-card-2 hover:text-text"
+                    }`}
                 >
                   {link.label}
                 </Link>

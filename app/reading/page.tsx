@@ -1,4 +1,4 @@
-import { getAllEntries } from "@/lib/content";
+import { getAllEntries, isDeepDive } from "@/lib/content";
 import EmptyState from "@/components/EmptyState";
 import ReadingListClient from "./ReadingListClient";
 
@@ -6,6 +6,7 @@ export default function ReadingPage() {
   const entries = getAllEntries("reading").map((e) => ({
     slug: e.slug,
     ...e.frontmatter,
+    isDeepDive: isDeepDive(e),
   }));
 
   return (

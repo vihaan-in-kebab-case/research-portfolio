@@ -36,7 +36,7 @@ export default function ReadingListClient({ entries }: { entries: ReadingEntry[]
       />
       <div className="space-y-2">
         {filtered.map((e) => {
-          const isDeepDive = Boolean(e.authors || e.venue);
+          const isDeepDive = e.isDeepDive;
           return (
             <Link
               key={e.slug}

@@ -23,7 +23,7 @@ const mono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: "Research Notebook",
-  description: "An open research notebook — how my ideas evolve, not just what I've built.",
+  description: "An open research notebook that documents how my ideas evolve, not just what I've built.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

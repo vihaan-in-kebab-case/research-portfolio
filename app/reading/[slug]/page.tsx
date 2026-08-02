@@ -1,4 +1,4 @@
-import { getAllEntries, getEntry } from "@/lib/content";
+import { getAllEntries, getEntry, isDeepDive } from "@/lib/content";
 import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
 
@@ -10,24 +10,30 @@ export default function ReadingEntryPage({ params }: { params: { slug: string } 
   const entry = getEntry("reading", params.slug);
   if (!entry) return notFound();
   const fm = entry.frontmatter;
-  const isDeepDive = Boolean(fm.authors || fm.venue);
+  const deepDive = isDeepDive(entry);
+  const hasCitation = Boolean(fm.authors || fm.venue);
 
   return (
     <article className="py-16">
-      <div className="pixel-corners border border-border bg-card p-10">
+      <div className="rounded-md border border-border bg-card p-10">
         <div className="mb-4 flex flex-wrap gap-4 font-mono text-[11px] text-text-faint">
-          {isDeepDive ? (
+          {hasCitation ? (
             <>
-              <span>{fm.authors ?? "—"}</span>
-              <span>{fm.venue ?? "—"}</span>
-              <span>{fm.year ?? "—"}</span>
+              <span>{fm.authors ?? "-"}</span>
+              <span>{fm.venue ?? "-"}</span>
+              <span>{fm.year ?? "-"}</span>
             </>
           ) : (
             <>
-              <span>DOMAIN: {fm.domain ?? "—"}</span>
-              <span>STATUS: {fm.status ?? "—"}</span>
-              <span>READ: {fm.date_read ?? fm.date ?? "—"}</span>
+              <span>DOMAIN: {fm.domain ?? "-"}</span>
+              <span>STATUS: {fm.status ?? "-"}</span>
+              <span>READ: {fm.date_read ?? fm.date ?? "-"}</span>
             </>
+          )}
+          {deepDive && (
+            <span className="border border-rust px-1.5 py-0.5 text-[9px] uppercase tracking-widest text-rust">
+              deep dive
+            </span>
           )}
         </div>
         <h1 className="mb-6 font-pixel text-xl">{fm.title ?? entry.slug}</h1>

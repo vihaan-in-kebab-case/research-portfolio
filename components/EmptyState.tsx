@@ -10,11 +10,11 @@ export default function EmptyState({ collection, hint }: EmptyStateProps) {
         no entries yet
       </p>
       <p className="mx-auto max-w-md text-sm text-text-dim">{hint}</p>
-      <p className="mx-auto mt-4 max-w-md font-mono text-xs text-text-faint">
+      {/*<p className="mx-auto mt-4 max-w-md font-mono text-xs text-text-faint">
         Add a .md file to{" "}
         <code className="text-cyan">content/{collection}/</code> and it will
         appear here automatically.
-      </p>
+      </p>*/}
     </div>
   );
 }
