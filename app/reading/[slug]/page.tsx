@@ -1,6 +1,7 @@
 import { getAllEntries, getEntry, isDeepDive } from "@/lib/content";
 import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
+import { MDXLink } from "@/components/MDXLink";
 
 export function generateStaticParams() {
   return getAllEntries("reading").map((e) => ({ slug: e.slug }));
@@ -46,7 +47,7 @@ export default function ReadingEntryPage({ params }: { params: { slug: string } 
 
         {entry.content.trim().length > 0 && (
           <div className="prose prose-invert max-w-none prose-headings:font-mono prose-headings:text-[11px] prose-headings:uppercase prose-headings:tracking-widest prose-headings:text-rust prose-p:text-text-dim prose-li:text-text-dim prose-strong:text-text prose-a:text-cyan">
-            <MDXRemote source={entry.content} />
+            <MDXRemote source={entry.content} components={{ a: MDXLink }} />
           </div>
         )}
       </div>
