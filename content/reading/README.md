@@ -11,6 +11,7 @@ time_invested: ""
 key_takeaway: ""     # shown as a pull-quote on the detail page
 related: ""
 status: ""           # e.g. read, in-progress, revisit
+deep_dive: ""        # true or false for explicit marking
 
 # Add these three to mark an entry as a "deep dive" — it gets a badge on
 # the list page and shows a citation line instead of domain/status:
