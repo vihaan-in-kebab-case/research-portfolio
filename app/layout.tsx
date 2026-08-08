@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     description: "An open research notebook that documents how my ideas evolve, not just what I've built.",
     url: "https://research-portfolio-phi.vercel.app",
     siteName: "Vihaan's Research Portfolio",
-    type: "website"
+    type: "website",
   },
 };
 
