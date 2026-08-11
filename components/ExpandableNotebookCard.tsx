@@ -1,15 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import { MDXRemote, type MDXRemoteSerializeResult } from "next-mdx-remote";
 
 interface Props {
     title: string;
     rows: { label: string; value: React.ReactNode }[];
-    mdxSource: MDXRemoteSerializeResult;
+    children: React.ReactNode;
 }
 
-export default function ExpandableNotebookCard({ title, rows, mdxSource }: Props) {
+export default function ExpandableNotebookCard({ title, rows, children }: Props) {
     const [open, setOpen] = useState(false);
 
     return (
@@ -44,7 +43,7 @@ export default function ExpandableNotebookCard({ title, rows, mdxSource }: Props
             >
                 <div className="overflow-hidden">
                     <div className="prose prose-invert max-w-none border-t border-border-soft px-5 py-5 prose-headings:font-mono prose-headings:text-[11px] prose-headings:uppercase prose-headings:tracking-widest prose-headings:text-rust prose-p:text-text-dim prose-li:text-text-dim prose-strong:text-text prose-a:text-cyan">
-                        <MDXRemote {...mdxSource} />
+                        {children}
                     </div>
                 </div>
             </div>

@@ -1,16 +1,10 @@
 import { getAllEntries } from "@/lib/content";
-import { serialize } from "next-mdx-remote/serialize";
+import { MDXRemote } from "next-mdx-remote/rsc";
 import EmptyState from "@/components/EmptyState";
 import ExpandableNotebookCard from "@/components/ExpandableNotebookCard";
 
-export default async function NotebookPage() {
+export default function NotebookPage() {
   const entries = getAllEntries("notebook");
-  const withSource = await Promise.all(
-    entries.map(async (e) => ({
-      ...e,
-      mdxSource: await serialize(e.content),
-    }))
-  );
 
   return (
     <section className="py-16">
@@ -30,17 +24,18 @@ export default async function NotebookPage() {
         />
       ) : (
         <div className="space-y-6">
-          {withSource.map((e) => (
+          {entries.map((e) => (
             <ExpandableNotebookCard
               key={e.slug}
               title={e.frontmatter.date ?? e.slug}
-              mdxSource={e.mdxSource}
               rows={[
                 { label: "objective", value: e.frontmatter.objective ?? "-" },
                 { label: "hypothesis", value: e.frontmatter.hypothesis ?? "-" },
                 { label: "next", value: e.frontmatter.next_steps ?? "-" },
               ]}
-            />
+            >
+              <MDXRemote source={e.content} />
+            </ExpandableNotebookCard>
           ))}
         </div>
       )}
