@@ -6,6 +6,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export default function HomePage() {
   const research = getAllEntries("research");
+  const projects = getAllEntries("projects");
   const reading = getAllEntries("reading");
   const questions = getAllEntries("questions");
   const openQuestions = questions.filter(
@@ -45,18 +46,22 @@ export default function HomePage() {
       <TerminalCard
         title="~/now"
         rows={[
-          { label: "reading", value: "[paper title — update in app/page.tsx]" },
-          { label: "building", value: "[current project]" },
-          { label: "asking", value: "[current research question]" },
+          { label: "reading", value: "A Survey of Graph Retrieval-Augmented Generation for Customized Large Language Models" },
+          { label: "building", value: "From scratch document rectification pipeline and ablation study" },
+          { label: "asking", value: "Does having an adaptive graph construction policy based on query class prove beneficial to a RAG pipeline? If yes, what metrics get better/worse?" },
         ]}
       />
 
       <div className="mb-16 mt-14">
         <h2 className="mb-5 font-pixel text-lg">This notebook, in numbers</h2>
-        <div className="grid grid-cols-1 gap-3.5 sm:grid-cols-3">
+        <div className="grid grid-cols-1 gap-3.5 sm:grid-cols-2 lg:grid-cols-4">
           <div className="border border-border bg-card p-5">
             <div className="mb-1 font-mono text-2xl text-cyan">{research.length}</div>
             <div className="text-xs text-text-dim">research threads, live or complete</div>
+          </div>
+          <div className="border border-border bg-card p-5">
+            <div className="mb-1 font-mono text-2xl text-cyan">{projects.length}</div>
+            <div className="text-xs text-text-dim">artifacts produced</div>
           </div>
           <div className="border border-border bg-card p-5">
             <div className="mb-1 font-mono text-2xl text-cyan">{reading.length}</div>
