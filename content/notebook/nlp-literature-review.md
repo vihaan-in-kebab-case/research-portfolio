@@ -6,16 +6,22 @@ next_steps: "Zero-in on a proposed pipeline and come up with novel algorithms fo
 ---
 
 ## Papers Selected (in chronological order of reading sequence):
-
+# Dynamic KG Construction
 - [NOUS: Construction and Querying of Dynamic Knowledge Graphs](https://ieeexplore.ieee.org/document/7930125) (Choudhury et al)
 - [Knowledge Editing with Dynamic Knowledge Graphs for Multi-Hop Question Answering](https://arxiv.org/abs/2412.13782) (Zhou et al)
-- [Know-Evolve: Deep Temporal Reasoning for Dynamic Knowledge Graphs](https://arxiv.org/abs/1705.05742) (Wang et al)
-- [Explainable Information Retrieval](https://arxiv.org/abs/2211.02405) (Anand et al)
-- [Multilingual Universal Sentence Encoder for Semantic Retrieval](https://arxiv.org/abs/1907.04307) (Yang et al)
-- [Retrieval-augmented generation in multilingual settings](https://arxiv.org/abs/2407.01463) (Chirkova et al)
-- [A Comprehensive Survey of Hallucination Mitigation Techniques in Large Language Models](https://arxiv.org/abs/2401.01313) (Tonmoy et al)
-- [RAG-HAT: A Hallucination-Aware Tuning Pipeline for LLM in Retrieval-Augmented Generation](https://aclanthology.org/2024.emnlp-industry.113/) (Song et al)
-- [HalluLens: LLM Hallucination Benchmark](https://arxiv.org/abs/2504.17550) (Bang et al)
-- [Uncertainty Estimation and Quantification for LLMs: A Simple Supervised Approach](https://arxiv.org/abs/2404.15993) (Liu et al)
+- [A Survey of Graph Retrieval-Augmented Generation for Customized Large Language Models](https://arxiv.org/abs/2501.13958) (Zhang et al)
+- [You Don't Need Pre-built Graphs for RAG: Retrieval Augmented Generation with Adaptive Reasoning Structures](https://arxiv.org/abs/2508.06105) (Chen et al)
 
-Gauging the gaps present, and aiming to design a dynamic graph based querying system to back responses with evidence and multi-source citing.
+# Graph-Grounded, Faithfulness-Evaluated Verification
+- [When Confidence Takes the Wrong Path: Diagnosing Retrieval-State Lock-In in RAG](https://arxiv.org/abs/2606.22728) (Sahib Julka)
+- [TRACE: State-Aware Query Processing over Temporal Evidence Graphs for Conversational Data](https://arxiv.org/abs/2607.00339) (Wang et al)
+- [Ex-GraphRAG: Interpretable Evidence Routing for Graph-Augmented LLMs](https://arxiv.org/abs/2605.21994) (Sade et al)
+
+# Composite Reliability Scoring
+- [Bayesian RAG: Uncertainty-Aware Retrieval for Reliable Financial Question Answering](https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1668172/full) (Ngartera et al)
+- [Uncertainty Quantification for Retrieval-Augmented Reasoning](https://arxiv.org/abs/2510.11483) (Soudani et al)
+
+# Low-Resource Multilingual RAG
+- [mRAKL: Multilingual Retrieval-Augmented Knowledge Graph Construction for Low-Resourced Languages](https://arxiv.org/abs/2507.16011) (Nigatu et al)
+
+Gauging the gaps present, and aiming to design a adaptive dynamic graph based RAG pipeline to back responses with faithfulness-evaluated explanation and multi-source citing.
