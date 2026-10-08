@@ -6,6 +6,7 @@ next_steps: "Design each component one by one individually for both projects sim
 ---
 
 # For the Document Rectification Pipeline:
+```text
 document-rectification/
 ├── README.md
 ├── pyproject.toml
@@ -87,8 +88,11 @@ document-rectification/
     ├── methodology.md
     ├── experiments.md
     └── decisions.md
+```
+
 
 # For the NLP Publication Project:
+```text
 sfgv-rag/
 │
 ├── README.md
@@ -282,3 +286,4 @@ sfgv-rag/
     ├── preprocess_data.py
     ├── build_index.py
     └── run_experiment.py
+```
