@@ -14,7 +14,7 @@ export default function NotebookPage() {
       <h1 className="mb-2 font-pixel text-2xl">Notebook</h1>
       <p className="mb-10 max-w-xl text-text-dim">
         A chronological lab notebook: objective, hypothesis, results,
-        unexpected observations, next steps.
+        unexpected observations, next steps. Click on the plus (top-right corner in each entry) to expand it.
       </p>
 
       {entries.length === 0 ? (
