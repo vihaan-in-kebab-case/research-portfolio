@@ -69,7 +69,7 @@ export default function AboutPage() {
         <h2 className="mb-3 font-pixel text-base">What problems interest me</h2>
         <p className="mb-7 text-text-dim">
           I am drawn to the tension between empirical deep learning and
-          first-principles mechanics&mdash;specifically, what happens when
+          first-principles mechanics including what happens when
           foundational assumptions quietly break. Modern AI often functions as an
           intricate black box where high benchmark numbers mask fragile failure
           surfaces: neural networks that exhibit severe overconfidence under
@@ -84,7 +84,7 @@ export default function AboutPage() {
         <h2 className="mb-3 font-pixel text-base">Why I enjoy research</h2>
         <p className="mb-7 text-text-dim">
           For as long as I can remember, I have been curious about how things
-          actually work&mdash;stripping down devices, both mechanical and
+          actually work. I used to do this by stripping down devices, both mechanical and
           electronic, to the bare-bones level, inspecting each individual part,
           and figuring out how they interact to make the complete working system.
           I have also always been obsessed with fixing things that are broken
@@ -98,7 +98,7 @@ export default function AboutPage() {
           With every project, every paper read, and every manuscript drafted, I aim
           to walk away better than I was before it. My philosophy is to go into the
           depths of everything and truly understand what all the individual
-          components do&mdash;which is why I am obsessed with ablation studies and
+          components do. This naturally inclines me to be obsessed with ablation studies and
           insist on implementing systems from scratch. That might seem
           counterintuitive to the &ldquo;standing on the shoulders of
           giants&rdquo; approach, but as a beginner researcher, building
@@ -108,7 +108,7 @@ export default function AboutPage() {
         </p>
         <h2 className="mb-3 font-pixel text-base">Long-term aspirations</h2>
         <p className="text-text-dim">
-          I want to use technology to give back to society&mdash;creating
+          I want to use technology to give back to society by creating
           meaningful tools that simplify everyday life, contribute positively to
           the environment, and solve long-standing challenges through principled
           engineering. Above all, I want to spend my career pursuing questions
