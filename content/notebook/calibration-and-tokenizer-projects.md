@@ -1,6 +1,6 @@
 ---
 date: "2026-10-05"
-objective: "Planning and beginning work on 2 new projects to help strengthen my understanding of LLMs and NLP. The two projects are: a small-scale implementation of the results from [On Calibration of Modern Neural Networks](https://arxiv.org/abs/1706.04599) and exploration of Indic Tokenizer Flexibility." 
+objective: "Planning and beginning work on 2 new projects to help strengthen my understanding of LLMs and NLP. The two projects are: a small-scale implementation of the results from [`On Calibration of Modern Neural Networks`](https://arxiv.org/abs/1706.04599) and exploration of Indic Tokenizer Flexibility." 
 hypothesis: "Planning these projects now, alongside my main research, will help me gain a broader understanding of the current LLM landscape, which will allow me to better contextualize my own research within the current body of work."
 next_steps: "Allocate time and resources efficiently to balance these projects, my Honours research, and my freelance venture alongside the standard coursework."
 ---
