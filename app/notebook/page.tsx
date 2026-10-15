@@ -18,10 +18,13 @@ export default function NotebookPage() {
       </p>
 
       {entries.length === 0 ? (
-        <EmptyState
-          collection="notebook"
-          hint="A notebook entry needs: date, objective, hypothesis, experiments, results, unexpected observations, questions, next steps."
-        />
+        <>
+          {/*
+            Entry requirements for content/notebook/:
+            Needs: date, objective, hypothesis, experiments, results, unexpected observations, questions, next steps.
+          */}
+          <EmptyState collection="notebook" />
+        </>
       ) : (
         <div className="space-y-6">
           {entries.map((e) => (

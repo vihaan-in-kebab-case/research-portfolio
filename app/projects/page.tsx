@@ -17,10 +17,14 @@ export default function ProjectsPage() {
             </p>
 
             {entries.length === 0 ? (
-                <EmptyState
-                    collection="projects"
-                    hint="A project entry needs: problem, why I built it, technical approach, mathematics involved, engineering decisions, lessons learned, limitations, future improvements, repository."
-                />
+                <>
+                    {/*
+                      Entry requirements for content/projects/:
+                      Needs: problem, why I built it, technical approach, mathematics involved,
+                      engineering decisions, lessons learned, limitations, future improvements, repository.
+                    */}
+                    <EmptyState collection="projects" />
+                </>
             ) : (
                 <div className="grid gap-4 sm:grid-cols-2">
                     {entries.map((e) => (

@@ -20,10 +20,14 @@ export default function ReadingPage() {
       </p>
 
       {entries.length === 0 ? (
-        <EmptyState
-          collection="reading"
-          hint="Every entry needs: title, domain, difficulty, date, status, key_takeaway. Add authors/venue/year and a full Markdown body (Strengths, Weaknesses, Assumptions, Connections, Questions, Ideas) for a deep-dive note."
-        />
+        <>
+          {/*
+            Entry requirements for content/reading/:
+            Needs: title, domain, difficulty, date, status, key_takeaway.
+            Add authors/venue/year and a full Markdown body (Strengths, Weaknesses, Assumptions, Connections, Questions, Ideas) for a deep-dive note.
+          */}
+          <EmptyState collection="reading" />
+        </>
       ) : (
         <ReadingListClient entries={entries} />
       )}

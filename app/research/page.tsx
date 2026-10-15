@@ -17,10 +17,14 @@ export default function ResearchPage() {
       </p>
 
       {entries.length === 0 ? (
-        <EmptyState
-          collection="research"
-          hint="A research entry needs: title, motivation, research question, background, literature, methodology, experiments, results, failure analysis, future work, paper/poster."
-        />
+        <>
+          {/*
+            Entry requirements for content/research/:
+            Needs: title, motivation, research question, background, literature,
+            methodology, experiments, results, failure analysis, future work, paper/poster.
+          */}
+          <EmptyState collection="research" />
+        </>
       ) : (
         <div className="space-y-4">
           {entries.map((e) => (

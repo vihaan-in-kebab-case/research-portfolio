@@ -16,10 +16,14 @@ export default function QuestionsPage() {
       </p>
 
       {entries.length === 0 ? (
-        <EmptyState
-          collection="questions"
-          hint="A question entry needs: question, why it interests me, current understanding, relevant papers, possible approaches, current status."
-        />
+        <>
+          {/*
+            Entry requirements for content/questions/:
+            Needs: question, why it interests me, current understanding, relevant papers,
+            possible approaches, current status.
+          */}
+          <EmptyState collection="questions" />
+        </>
       ) : (
         <div className="space-y-4">
           {entries.map((e) => (
